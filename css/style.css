@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Roboto:ital,wght@0,400;1,300&display=swap');
+:root{
+    --main: #B11DE7;
+    --font1: font-family: 'Roboto', sans-serif;
+    --font2: font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F1EBF3;
+}
+.navigation{
+    padding: 0px 15vw;
+    background-color: #000;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+ ul{
+    display: inline;
+}
+ ul li{
+    list-style: none;
+    display: inline;
+}
+ ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1vw;
+}
+
+.content-text{
+    background-image: url(../image/bg1.jfif);
+    background-position: center center;
+    background-size: 142vw 61vh;
+    background-repeat: no-repeat;
+    padding: 0px 14vw;
+    
+}
+.rating-rang{
+    margin-top: -40px;
+}
+.rating .name{
+    font-weight: bold;
+    color: red;
+    
+    font-size: 25px;
+}
+.rating-rang p.nine{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+.rating-rang img{
+    width: 90px;
+    margin-top: -15px;
+    margin-left: -19px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px 2px gray;
+    width: 360px;
+    margin: 10px;
+    transition: .5s ease-in-out;
+}
+@media (max-width: 1216px) and (min-width: 1000px){
+    .card{
+        width: 300px;
+    }
+    .update-control.update-middel ul li{
+        display: none;
+    }
+}
+@media (max-width: 415px) and (min-width: 359px){
+    .update-control .update-middel{
+        display: none;
+    }
+    .update-control .update-right .out i{
+        font-size: 11px;
+        padding: 0px;
+    }
+    .update-control{
+        width: 420px;
+    }
+    .update-control .update-right .out h1{
+        font-size: 20px;
+        margin-left: -30px;
+    }
+    .update-control .update-right .out p{
+        margin-left: -20px;
+    }
+    .update-control .update-right .label img{
+        width: 100px;
+    }
+    .update-control .update-right .label h3{
+        font-size: 14px;
+    }
+    .last-logo{
+       margin-top: 68px;
+       margin-left: -178px;
+    }
+    footer.foot.footer-left {
+        padding-left: 10px;
+        border-right: 0px solid red;
+    }
+    
+    
+    p{
+        font-size: 11px;
+    }
+}
+@media (max-width: 825px) and (min-width: 765px){
+    .card{
+        width: 690px;
+    }
+    .update-control .update-right .out i{
+        font-size: 15px;
+        padding: 0px;
+    }
+}
+@media (max-width: 600px) and (min-width: 535px){
+    .card{
+        width: 500px;
+    }
+    .update-control .update-middel{
+        display: none;
+    }
+    .update-control{
+        width: 550px;
+    }
+    .update-control .update-right .out i{
+        font-size: 11px;
+        padding: 0px;
+    }
+}
+@media (max-width: 300px) and (min-width: 250px){
+    .card{
+        width: 500px;
+    }
+    .update-control .update-right .label img{
+        width: 80px;
+    }
+    .card{
+        width: 240px;
+        
+    }
+    .card .website{
+        display: none;
+    }
+    .rating-rang img{
+        display: none;
+    }
+    .last-logo{
+        display: none;
+     }
+    .update-control .update-middel{
+        display: none;
+    }
+    .update-control{
+        width: 300px;
+    }
+    .update-control .update-right .out i{
+        font-size: 11px;
+        padding: 0px;
+    }
+}
+@media (max-width: 915px) and (min-width: 830px){
+    .card{
+        width: 950px;
+    }
+    .update-control .update-right .out i{
+        font-size: 15px;
+        padding: 0px;
+    }
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.content-text{
+    text-align: center;
+}
+.content .last{
+    margin-left: 14vw;
+}
+.content-text ul li{
+    padding: 0px 15px;
+    cursor: pointer;
+}
+.visit{
+    width: 100%;
+    padding: 8px;
+    background-color: #0FCF96;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+i{
+    color: var(--main);
+    padding: 5px;
+}
+.update{
+    background-color: #fff;
+    margin: 0vw 14vw;
+}
+
+.sub-update{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 20px;
+}
+.sub-update ul li{
+    display: block;
+    line-height: 10px;
+}
+
+.update-right{
+    display: flex;
+    justify-content: space-between;
+}
+.out ul li{
+    display: inline;
+}
+.update-middel{
+    width: 350px;
+}
+ .out h1{
+    padding-left: 60px;
+}
+.sub-update .label h3{
+    padding: 5px;
+    font-size: 20px;
+    margin-left: -20px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: var(--main);
+}
+.out p{
+    padding-left: 50px;
+}
+.update-right button{
+    background-color: var(--main);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+.update .down-label{
+    border-top: 2px solid var(--main);
+    padding: 5px;
+    text-align: center;
+    background-color: #FFF3BB;
+}
+
+.reader{
+    background-image: url(../image/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+}
+.reader .rating p{
+    font-size: 14px;
+    padding: 10px 0px;
+}
+.reader .card-left img{
+    border-radius: 50%;
+}
+
+.description{
+    padding: 50px 10vw;
+    
+}
+.sub-text{
+    background-color: #fff;
+    padding: 2vw 4vw;
+}
+
+footer{
+    background-color: #110416;
+    color: #fff;
+}
+
+footer .last-list li{
+   line-height: 30px;
+    display: list-item;
+    list-style-type: disc;
+   
+}
+footer ul{
+    padding-top: -40px;
+}
+footer ul li::marker {
+ color: var(--main);
+    
+}
+footer p{
+    padding: 60px 0px 0px 0px;
+}
+footer .footer-left{
+    padding-left: 80px;
+    border-right: 2px solid red;
+}
+footer h6{
+    padding: 20px 0px;
+}
+
+footer .second-last li{
+    display: block;
+   
+}
+footer .footer-last{
+    border-right: none;
+}
+footer .social-icon{
+   cursor: pointer;
+    font-size: 30px;
+    
+}
+footer img{
+    border-radius: 50%;
+}
